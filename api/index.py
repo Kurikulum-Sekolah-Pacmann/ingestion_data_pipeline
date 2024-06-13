@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-def generate_dummy_data(page_size=10):
+def generate_dummy_data(page_size=100):
     dummy_data = []
     for i in range(page_size):
         dummy_data.append({
