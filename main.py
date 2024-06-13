@@ -4,7 +4,6 @@ import random
 
 app = Flask(__name__)
 
-# Dummy data generation function
 def generate_dummy_data(page_size=10):
     dummy_data = []
     for i in range(page_size):
@@ -16,15 +15,13 @@ def generate_dummy_data(page_size=10):
         })
     return dummy_data
 
-# Initialize dummy data
 dummy_data = {}
-num_pages = 5  # Number of pages
-page_size = 10  # Number of items per page
+num_pages = 5
+page_size = 10
 
 for page in range(1, num_pages + 1):
     dummy_data[page] = generate_dummy_data(page_size)
 
-# Endpoint to get dummy data based on page, start date, and end date
 @app.route('/api/dummydata', methods=['GET'])
 def get_dummy_data():
     page = int(request.args.get('page', 1))
@@ -41,11 +38,9 @@ def get_dummy_data():
         return jsonify({"message": "Invalid date format. Use YYYY-MM-DD format"}), 400
 
     data_for_page = dummy_data.get(page, [])
-
     filtered_data = [item for item in data_for_page if start_date <= datetime.strptime(item['birthdate'], '%Y-%m-%d') <= end_date]
 
     return jsonify(filtered_data)
 
 if __name__ == '__main__':
     app.run(debug=False)
-    # a = generate_dummy_data(5)

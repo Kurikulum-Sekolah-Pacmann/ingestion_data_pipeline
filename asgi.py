@@ -1,20 +1,11 @@
-# asgi.py
+from main import app  # Import your Flask app
 
-from flask import Flask
-from main import app  # Import your Flask app from dummy_api.py
+if __name__ == "__main__":
+    from hypercorn.asyncio import serve
+    from hypercorn.config import Config
 
-# Create an ASGI-compatible application callable
-asgi_app = Flask(__name__)
-asgi_app.wsgi_app = app
-
-# Define an entry point for ASGI server
-def app(scope):
-    async def asgi_app_receive():
-        pass
-
-    async def asgi_app_send(message):
-        pass
-
-    return asgi_app_receive, asgi_app_send
-
-app = asgi_app  # ASGI entry point for Vercel
+    config = Config()
+    config.bind = ["0.0.0.0:8000"]
+    
+    import asyncio
+    asyncio.run(serve(app, config))
