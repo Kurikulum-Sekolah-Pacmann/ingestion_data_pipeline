@@ -1,19 +1,23 @@
 from flask import Flask, jsonify, request
 from datetime import datetime, timedelta
 import random
+import pandas as pd
 
 app = Flask(__name__)
 
 def generate_dummy_data(page_size=100):
-    dummy_data = []
-    for i in range(page_size):
-        dummy_data.append({
-            "id": i + 1,
-            "name": f"User {i + 1}",
-            "email": f"user{i + 1}@example.com",
-            "birthdate": (datetime.now() - timedelta(days=random.randint(365, 3650))).strftime('%Y-%m-%d')
-        })
-    return dummy_data
+    # dummy_data = []
+    # for i in range(page_size):
+    #     dummy_data.append({
+    #         "id": i + 1,
+    #         "name": f"User {i + 1}",
+    #         "email": f"user{i + 1}@example.com",
+    #         "birthdate": (datetime.now() - timedelta(days=random.randint(365, 3650))).strftime('%Y-%m-%d')
+    #     })
+
+    data_csv = pd.read_csv('data/order.csv')
+    data_dict = data_csv.to_dict('records')
+    return data_dict
 
 dummy_data = {}
 num_pages = 5
@@ -38,7 +42,7 @@ def get_dummy_data():
         return jsonify({"message": "Invalid date format. Use YYYY-MM-DD format"}), 400
 
     data_for_page = dummy_data.get(page, [])
-    filtered_data = [item for item in data_for_page if start_date <= datetime.strptime(item['birthdate'], '%Y-%m-%d') <= end_date]
+    filtered_data = [item for item in data_for_page if start_date <= datetime.strptime(item['order_date'], '%Y-%m-%d %H:%M:%S.%f') <= end_date]
 
     return jsonify(filtered_data)
 
