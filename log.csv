@@ -1,10 +1,7 @@
 step,status,source,table_name,etl_date
-extraction,success,spreadsheet,category,2024-06-26 13:57:08
-extraction,success,spreadsheet,category,2024-06-26 13:57:23
-extraction,success,spreadsheet,category,2024-06-26 15:15:29
-extraction,success,spreadsheet,category,2024-06-26 15:23:14
-extraction,success,spreadsheet,performance_shop,2024-06-26 15:56:38
-extraction,success,spreadsheet,performance_shop,2024-06-26 16:09:21
-extraction,success,spreadsheet,performance_shop,2024-06-26 16:09:32
-extraction,success,database,customer,2024-06-26 16:09:42
-extraction,success,database,customer,2024-06-26 16:10:12
+
+extraction,success,spreadsheet,category,2024-06-27 12:11:35
+extraction,success,database,customer,2024-06-27 12:11:46
+extraction,success,database,customer,2024-06-27 12:11:59
+extraction,success,api,order,2024-06-27 12:12:18
+extraction,success,api,order,2024-06-27 12:12:25
