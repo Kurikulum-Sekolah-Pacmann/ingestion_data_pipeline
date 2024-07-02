@@ -1,7 +1,56 @@
 step,status,source,table_name,etl_date
-
-extraction,success,spreadsheet,category,2024-06-27 12:11:35
-extraction,success,database,customer,2024-06-27 12:11:46
-extraction,success,database,customer,2024-06-27 12:11:59
-extraction,success,api,order,2024-06-27 12:12:18
-extraction,success,api,order,2024-06-27 12:12:25
+extraction,success,spreadsheet,category,2024-07-02 14:04:44
+extraction,success,spreadsheet,category,2024-07-02 14:05:10
+extraction,success,database,customer,2024-07-02 14:08:24
+extraction,success,api,order,2024-07-02 14:10:05
+extraction,success,api,order,2024-07-02 14:10:32
+load staging,failed,Spreadsheet,category,2024-07-02 14:35:25
+load staging,failed,Spreadsheet,category,2024-07-02 14:38:37
+load staging,failed,Spreadsheet,category,2024-07-02 14:53:06
+load staging,failed,Spreadsheet,category,2024-07-02 15:04:06
+load staging,success,Spreadsheet,category,2024-07-02 15:06:39
+load staging,success,Spreadsheet,category,2024-07-02 15:09:03
+load staging,success,Spreadsheet,category,2024-07-02 15:44:42
+load staging,failed,database,customer,2024-07-02 15:48:50
+load staging,failed,database,customer,2024-07-02 15:49:05
+load staging,failed,database,customer,2024-07-02 15:50:17
+load staging,success,database,customer,2024-07-02 15:50:54
+load staging,failed,database,order,2024-07-02 15:52:31
+load staging,failed,database,order,2024-07-02 15:52:55
+load staging,success,database,order,2024-07-02 15:54:23
+load staging,success,database,order,2024-07-02 15:55:32
+load staging,success,database,order,2024-07-02 15:56:00
+load staging,failed,database,orders,2024-07-02 15:56:29
+load staging,failed,database,orders,2024-07-02 15:57:00
+load staging,failed,database,orders,2024-07-02 15:57:38
+load staging,failed,database,orders,2024-07-02 16:26:41
+load staging,failed,database,orders,2024-07-02 16:27:52
+extraction,success,spreadsheet,category,2024-07-02 16:33:57
+extraction,success,api,order,2024-07-02 16:34:13
+load staging,failed,database,orders,2024-07-02 16:34:18
+load staging,failed,database,orders,2024-07-02 16:35:11
+extraction,success,api,order,2024-07-02 16:37:17
+load staging,failed,database,orders,2024-07-02 16:37:21
+extraction,success,api,order,2024-07-02 16:43:02
+load staging,failed,database,orders,2024-07-02 16:43:07
+extraction,success,spreadsheet,category,2024-07-02 16:44:45
+extraction,success,database,customer,2024-07-02 16:44:46
+extraction,success,database,customer,2024-07-02 16:44:46
+extraction,success,api,order,2024-07-02 16:44:47
+extraction,success,api,order,2024-07-02 16:44:48
+load staging,failed,database,orders,2024-07-02 16:45:55
+extraction,success,api,order,2024-07-02 16:48:13
+load staging,failed,database,orders,2024-07-02 16:48:16
+extraction,success,spreadsheet,category,2024-07-02 16:53:03
+extraction,success,api,order,2024-07-02 16:53:11
+load staging,failed,database,orders,2024-07-02 16:53:14
+load staging,failed,database,orders,2024-07-02 16:53:50
+load staging,failed,database,orders,2024-07-02 16:54:13
+extraction,success,api,order,2024-07-02 16:55:09
+load staging,failed,database,orders,2024-07-02 16:55:12
+extraction,success,spreadsheet,category,2024-07-02 17:00:08
+load staging,success,Spreadsheet,category,2024-07-02 17:00:26
+extraction,success,database,customer,2024-07-02 17:00:29
+load staging,success,database,customer,2024-07-02 17:00:42
+extraction,success,api,order,2024-07-02 17:00:49
+load staging,failed,database,orders,2024-07-02 17:00:54
