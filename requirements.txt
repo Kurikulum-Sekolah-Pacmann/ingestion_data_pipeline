@@ -1,1 +1,8 @@
-Flask==3.0.0
+gspread
+oauth2client
+pandas
+python-dotenv
+SQLAlchemy
+pangres
+gspread-dataframe
+minio
