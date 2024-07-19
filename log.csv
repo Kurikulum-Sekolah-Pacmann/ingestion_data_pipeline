@@ -48,9 +48,18 @@ load staging,failed,database,orders,2024-07-02 16:53:50
 load staging,failed,database,orders,2024-07-02 16:54:13
 extraction,success,api,order,2024-07-02 16:55:09
 load staging,failed,database,orders,2024-07-02 16:55:12
-extraction,success,spreadsheet,category,2024-07-02 17:00:08
-load staging,success,Spreadsheet,category,2024-07-02 17:00:26
-extraction,success,database,customer,2024-07-02 17:00:29
-load staging,success,database,customer,2024-07-02 17:00:42
-extraction,success,api,order,2024-07-02 17:00:49
-load staging,failed,database,orders,2024-07-02 17:00:54
+extraction,success,staging,category,2024-07-19 16:37:46
+transformation,success,staging,category,2024-07-19 16:37:46
+load target,success,staging,category,2024-07-19 16:37:46
+extraction,success,staging,customer,2024-07-19 16:37:48
+transformation,success,staging,customer,2024-07-19 16:37:48
+validation,success,staging,customer,2024-07-19 16:37:48
+load target,success,staging,customer,2024-07-19 16:37:48
+extraction,success,staging,orders,2024-07-19 16:37:50
+transformation,success,staging,orders,2024-07-19 16:37:50
+load target,success,staging,orders,2024-07-19 16:37:50
+transformation,success,staging,order_detail,2024-07-19 16:37:53
+transformation,success,staging,order_detail,2024-07-19 16:38:01
+transformation,success,staging,order_detail,2024-07-19 16:38:18
+validation,success,staging,customer,2024-07-19 16:38:18
+load target,success,staging,order_detail,2024-07-19 16:38:19
